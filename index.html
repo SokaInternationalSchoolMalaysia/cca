@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CCA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CCAs</h1>
+        <p>Explore available co-curricular activities</p>
+    </header>
+
+    <main>
+        <div class="filters">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for CCAs...">
+        
+            <select id="tagFilter" onchange="searchFunction()">
+                <option value="all">All</option>
+                <option value="sport">Sport</option>
+                <option value="art">Art</option>
+                <option value="academic">Academic</option>
+                <option value="space">Space</option>
+            </select>
+        </div>
+
+        <ul id="ccaList">
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Astronomy Club</h3>
+                        <span class="tag space">Space</span>
+                    </div>
+                    <p>Astronomy Club is an activity where students learn about astronomy and space science through discussion, research, and
+                    collaborative activities.
+                    <br><br>
+                    The objective is to deepen student's understanding of the universe, encourage curiosity, and develop interest in science
+                    beyond the classroom.</p>
+                    <div class="cca-btn" onclick="window.location.href='/cca/astronomy_club/'"><p>Learn more... (click)</p></div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Badminton</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Team-based sport focusing on agility and teamwork.</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Football</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Team-based sport focusing on agility and teamwork.</p>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #00bfff;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+#searchInput,
+#tagFilter {
+    padding: 14px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#searchInput {
+    flex: 1;
+}
+
+#tagFilter {
+    width: 150px;
+}
+
+#ccaList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+#ccaList li a {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: black;
+
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+    border: #eaeaea solid 1px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#ccaList li a h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+#ccaList li a p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+#ccaList li a:hover {
+    transform: translateY(-2px);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); */
+}
+
+.cca-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cca-header h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+
+    backdrop-filter: blur(6px);
+    background-color: rgba(231, 77, 60, 0.15);
+    color: #e74d3c;
+
+    border: 1px solid rgba(231, 77, 60, 0.4);
+}
+
+/* diff color :) */
+.tag.sport {
+    background-color: rgba(231, 77, 60, 0.15);
+    border-color: rgba(231, 77, 60, 0.4);
+    color: #e74d3c;
+}
+
+.tag.art {
+    background-color: rgba(155, 89, 182, 0.15);
+    border-color: rgba(155, 89, 182, 0.4);
+    color: #9b59b6;
+}
+
+
+.tag.space {
+    background-color: rgba(144, 52, 219, 0.15);
+    border-color: rgba(169, 52, 219, 0.4);
+    color: #a934db;
+}
+
+
+.cca-btn p {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+
+.cca-btn p:hover {
+    transform: translateY(-2px);
+}
