@@ -10,59 +10,239 @@
     <header>
         <h1>CCAs</h1>
         <p>Explore available co-curricular activities</p>
+        <a href="./interview/">INTERVIEW VIDEO</a>
     </header>
 
     <main>
         <div class="filters">
             <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for CCAs...">
-        
+
             <select id="tagFilter" onchange="searchFunction()">
                 <option value="all">All</option>
                 <option value="sport">Sport</option>
                 <option value="art">Art</option>
                 <option value="academic">Academic</option>
+                <option value="music">Music</option>
                 <option value="space">Space</option>
             </select>
         </div>
 
         <ul id="ccaList">
+
             <li>
                 <a>
                     <div class="cca-header">
                         <h3>Astronomy Club</h3>
                         <span class="tag space">Space</span>
                     </div>
-                    <p>Astronomy Club is an activity where students learn about astronomy and space science through discussion, research, and
-                    collaborative activities.
-                    <br><br>
-                    The objective is to deepen student's understanding of the universe, encourage curiosity, and develop interest in science
-                    beyond the classroom.</p>
-                    <div class="cca-btn" onclick="window.location.href='./cca/astronomy_club/'"><p>Learn more... (click)</p></div>
+                    <p>Learn astronomy and space science through discussion, research, and collaborative activities.
+                        Encourages curiosity and critical thinking.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/astronomy_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
                 </a>
             </li>
+
             <li>
                 <a>
                     <div class="cca-header">
-                        <h3>Badminton</h3>
+                        <h3>Chess Club</h3>
                         <span class="tag sport">Sport</span>
                     </div>
-                    <p>Team-based sport focusing on agility and teamwork.</p>
+                    <p>Develop strategic thinking and problem-solving through Chinese and International Chess with
+                        friendly matches and practice sessions.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/chess_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
                 </a>
             </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Soka Melody Makers (choir)</h3>
+                        <span class="tag music">Music</span>
+                    </div>
+                    <p>Mixed youth choir developing vocal technique, harmony, and stage presence. Perform pop,
+                        contemporary, cultural, and choral pieces while building confidence.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/choir/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Contemporary Dance</h3>
+                        <span class="tag art">Art</span>
+                    </div>
+                    <p>Explore movement and self-expression through dance. Develop technique, creativity, teamwork, and
+                        confidence on and off stage.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/contemporary_dance/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Cultural Club</h3>
+                        <span class="tag art">Art</span>
+                    </div>
+                    <p>Explore and celebrate diverse cultures through creative projects, crafts, festivals, and
+                        intercultural activities while building communication and leadership skills.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/cultural_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>First Aid Club</h3>
+                        <span class="tag academic">Academic</span>
+                    </div>
+                    <p>Learn basic first aid and Basic Life Support (BLS) to respond confidently in emergencies and
+                        increase health and safety awareness.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/first_aid_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
             <li>
                 <a>
                     <div class="cca-header">
                         <h3>Football</h3>
                         <span class="tag sport">Sport</span>
                     </div>
-                    <p>Team-based sport focusing on agility and teamwork.</p>
+                    <p>Learn the basics of football: ball mastery, striking, 1v1 skills, and teamwork while improving
+                        fitness, communication, and technique.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/football/'">
+                        <p>Learn more... (click)</p>
+                    </div>
                 </a>
             </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Netball</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Develop netball skills, fitness, and teamwork through training sessions, drills, and game play
+                        while fostering discipline and sportsmanship.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/netball/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Model United Nations</h3>
+                        <span class="tag academic">Academic</span>
+                    </div>
+                    <p>Simulate UN conferences, research countries and topics, debate international issues, and develop
+                        public speaking, diplomacy, and leadership skills.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/mun/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Music Band</h3>
+                        <span class="tag music">Music</span>
+                    </div>
+                    <p>Play pop songs in a band setting, learn teamwork, develop discipline, and experiment creatively
+                        with instruments and performance ideas.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/music_band/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Slice of Art</h3>
+                        <span class="tag art">Art</span>
+                    </div>
+                    <p>Creative exploration through drawing, painting, sculpture, and collaborative projects. Develop
+                        imagination, observation, critical thinking, and teamwork.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/slice_of_art/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Archery Club</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Learn archery fundamentals in a safe environment, develop concentration, discipline, and hand-eye
+                        coordination while building confidence and sportsmanship.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/archery_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Badminton</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Develop badminton technique, footwork, strategy, and fitness while improving teamwork, focus,
+                        confidence, and resilience in a fun, structured environment.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/badminton/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Journalism Club</h3>
+                        <span class="tag academic">Academic</span>
+                    </div>
+                    <p>Learn writing, research, reporting, and multimedia skills while exploring meaningful school and
+                        community issues. Develop confidence, teamwork, and ethical journalism practices.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/journalism_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="cca-header">
+                        <h3>Hiking Club</h3>
+                        <span class="tag sport">Sport</span>
+                    </div>
+                    <p>Engage in guided hikes and outdoor learning to build physical endurance, teamwork, leadership,
+                        environmental awareness, and self-discipline.</p>
+                    <div class="cca-btn" onclick="window.location.href='./cca/hiking_club/'">
+                        <p>Learn more... (click)</p>
+                    </div>
+                </a>
+            </li>
+
         </ul>
     </main>
 
     <script src="scripts.js"></script>
 </body>
-
 
 </html>
